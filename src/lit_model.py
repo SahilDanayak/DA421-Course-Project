@@ -14,9 +14,9 @@ from torchmetrics import MetricCollection
 from torchmetrics.classification import Accuracy, F1Score, Precision, Recall
 from transformers.optimization import get_cosine_with_min_lr_schedule_with_warmup
 
-from mmsd.dataset import MMSDModelInput
-from mmsd.model import InteractiveCLIP4MMSD, MMSDConfig, MMSDOutput
-from mmsd.predictor import MemoEnhancedPredictor
+from src.dataset import MMSDModelInput
+from src.model import InteractiveCLIP4MMSD, MMSDConfig, MMSDOutput
+from src.predictor import MemoEnhancedPredictor
 
 logger = logging.getLogger("mmsd.lit_model")
 

@@ -2,7 +2,7 @@ import typing as t
 
 import datasets as dt
 
-from mmsd.dataset import MMSDDatasetModule
+from src.dataset import MMSDDatasetModule
 
 
 def test_dataset_module() -> None:

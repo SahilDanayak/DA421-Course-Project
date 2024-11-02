@@ -13,8 +13,8 @@ import torch
 from pytorch_lightning.callbacks import Callback, ModelCheckpoint
 from pytorch_lightning.cli import LightningCLI
 
-from mmsd.dataset import MMSDDatasetModule
-from mmsd.lit_model import LitMMSDModel
+from src.dataset import MMSDDatasetModule
+from src.lit_model import LitMMSDModel
 
 
 class MMSDCLI(LightningCLI):

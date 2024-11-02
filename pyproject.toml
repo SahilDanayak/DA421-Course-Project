@@ -39,4 +39,4 @@ line-length = 88
 target-version = ['py39']
 
 [tool.poetry.scripts]
-mmsd = "mmsd.__main__:cli_main"
+mmsd = "src.__main__:cli_main"

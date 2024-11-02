@@ -6,8 +6,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
 
-from mmsd.dataset import MMSDModelInput
-from mmsd.model import MMSDOutput
+from src.dataset import MMSDModelInput
+from src.model import MMSDOutput
 
 logger = logging.getLogger("mmsd.predictor")
 

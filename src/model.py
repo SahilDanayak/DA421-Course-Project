@@ -7,7 +7,7 @@ import torch.nn as nn
 from transformers import PretrainedConfig, PreTrainedModel
 from transformers.modeling_outputs import ModelOutput
 
-from mmsd.interactive_clip import CLIPTextModel, CLIPVisionModel
+from src.interactive_clip import CLIPTextModel, CLIPVisionModel
 
 logger = logging.getLogger("mmsd.model")
 
