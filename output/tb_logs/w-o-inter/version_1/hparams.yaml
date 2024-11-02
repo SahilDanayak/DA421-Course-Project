@@ -1,0 +1,26 @@
+clip_ckpt_name: openai/clip-vit-base-patch32
+embed_size: 1024
+is_compiled: false
+is_t2v_adapter_mlp: false
+is_v2t_adapter_mlp: true
+learning_rate: 0.0005
+lora_alpha: 8
+lora_dropout: 0.1
+lora_lr: 0.0001
+lora_modules:
+- k_proj
+- v_proj
+- out_proj
+lora_rank: 8
+memo_size: 1024
+min_lr_rate: 0.01
+num_warmup_rate: 0.2
+text_cond_attn_mode: none
+text_embed_dim: 512
+text_num_layers: 12
+use_lora: true
+use_memo: true
+use_sim_loss: true
+vision_cond_attn_mode: none
+vision_embed_dim: 768
+vision_num_layers: 12
