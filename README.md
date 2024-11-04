@@ -4,6 +4,7 @@
 # Table of Contents
 
 - [Abstract](#abstract)
+- [Model Architecture](#model-architecture)
 - [Installation](#installation)
 - [Installing Dependencies](#installing-dependencies)
 - [Dataset Preprocessing](#dataset-preprocessing)
@@ -13,6 +14,12 @@
 ## Abstract
 
 Detecting sarcasm in social media posts, often expressed with a mix of text and images, presents unique challenges in sentiment analysis and intent recognition. Many current multi-modal sarcasm detection methods struggle to accurately interpret the subtle cues arising from text-image interactions, often leading to inflated performance claims. In this project, we leverage the [CLIP (Contrastive Language-Image Pre-Training)](https://arxiv.org/abs/2103.00020v1) model, which integrates cross-modality information within each encoder to enhance the representation of text and images together. We also incorporate a dynamic, fixed-length dual-channel memory to retain historical information on test samples during inference. This memory functions as a non-parametric classifier to improve prediction accuracy, strengthening the robustness of our multi-modal sarcasm detection model.
+
+## Model Architecture
+
+![Model Architecture](./images/architecture.png)
+
+Our model architecture leverages the CLIP model for multi-modal sarcasm detection. The architecture integrates cross-modality information within each encoder to enhance the representation of text and images together. Additionally, a dynamic, fixed-length dual-channel memory is incorporated to retain historical information on test samples during inference, functioning as a non-parametric classifier to improve prediction accuracy.
 
 
 ## Installation
