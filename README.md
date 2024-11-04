@@ -1,7 +1,16 @@
 # DA421 Course Project
 ## Multi-modal Sarcasm Detection
 
-## 📄Abstract
+# Table of Contents
+
+- [Abstract](#abstract)
+- [Installation](#installation)
+- [Installing Dependencies](#installing-dependencies)
+- [Dataset Preprocessing](#dataset-preprocessing)
+- [Execution](#execution)
+- [Acknowledgements](#acknowledgements)
+
+## Abstract
 
 Detecting sarcasm in social media posts, often expressed with a mix of text and images, presents unique challenges in sentiment analysis and intent recognition. Many current multi-modal sarcasm detection methods struggle to accurately interpret the subtle cues arising from text-image interactions, often leading to inflated performance claims. In this project, we leverage the [CLIP (Contrastive Language-Image Pre-Training)](https://arxiv.org/abs/2103.00020v1) model, which integrates cross-modality information within each encoder to enhance the representation of text and images together. We also incorporate a dynamic, fixed-length dual-channel memory to retain historical information on test samples during inference. This memory functions as a non-parametric classifier to improve prediction accuracy, strengthening the robustness of our multi-modal sarcasm detection model.
 
@@ -47,7 +56,7 @@ To start the Poetry shell, use:
 poetry shell
 ```
 
-## ⚠️Dataset preprocessing
+## Dataset Preprocessing
 
 We use the [datasets](https://huggingface.co/docs/datasets/en/index) library to load the dataset from HuggingFace.
 
@@ -71,59 +80,16 @@ python src/convert_mmsd2_to_imagefolder_data.py
 
 Lastly, update line 69 in [dataset.py](./src/dataset.py) to specify the name of the uploaded dataset.
 
-## ⚗️ Reproducing Results
+## Execution
 
-Run the following commands to reproduce the results:
+Run the following command to reproduce the results:
 
 ```shell
-# Main results
 ./src/run_main_results.sh
 ```
 
-<details>
-<summary>Click to view main results</summary>
-<center>
-<img src="./docs/main-results.png" alt="Main Results" style="width: 80%"/>
-</center>
-</details>
 
-```shell
-# Ablation study
-./src/run_ablation_study.sh
-```
-
-<details>
-<summary>Click to view ablation study results</summary>
-<center>
-<img src="./docs/ablation.png" alt="Ablation Study" style="width: 50%"/>
-</center>
-</details>
-
-```shell
-# LoRA analysis
-./src/run_lora_analysis.sh
-```
-
-<details>
-<summary>Click to view LoRA analysis results</summary>
-<center>
-<img src="./docs/lora.png" alt="LoRA Analysis" style="width: 50%"/>
-</center>
-</details>
-
-```shell
-# Hyperparameter study for InterCLIP-MEP w/ T2V
-./src/run_hyperparam_study.sh
-```
-
-<details>
-<summary>Click to view hyperparameter study results</summary>
-<center>
-<img src="./docs/hyperparameter.png" alt="Hyperparameter Study" style="width: 50%"/>
-</center>
-</details>
-
-## 🤗 Acknowledgements
+## Acknowledgements
 
 - [Hugging Face](https://huggingface.co/)
 - [CLIP](https://github.com/openai/CLIP)
