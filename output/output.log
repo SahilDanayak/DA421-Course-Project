@@ -1478,7 +1478,7 @@ Testing:  97%|#########| 33/34 [9:59:07<0:08:21, 0.00it/s, v_num=1, test/loss=1.
 Testing: 100%|#########| 34/34 [10:24:23<0:00:00, 0.00it/s, v_num=1, test/loss=1.081]
 
 => result
-* accuracy: 0.861
-* precision: 0.843
-* recall: 0.855
-* macro_f1: 0.848
+* accuracy: 0.867
+* precision: 0.836
+* recall: 0.873
+* macro_f1: 0.856
